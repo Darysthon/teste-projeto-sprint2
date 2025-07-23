@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Compass RSS Reader</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Scholarship Compass RSS Leitor</h1>
+        <p>Extrai conteúdo RSS de<a href="https://res.stj.jus.br/hrestp-c-portalp/RSS.xml" target="_blank">STJ RSS Feed</a> e salva no AWS S3.</p>
+
+        <div class="actions">
+            <button id="extractButton">Dados RSS Extraídos ...</button>
+            <button id="fetchButton">Buscar os dados RSS mais recentes do S3</button>
+        </div>
+
+        <div id="status" class="status-message"></div>
+
+        <div class="data-section">
+            <h2>Dados RSS Extraídos</h2>
+            <pre id="rssData"></pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
